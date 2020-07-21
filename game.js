@@ -8,7 +8,7 @@ var started = false;
 var level = 0;
 
 //initilize level
-$(document).keypress(function() {
+$("h1").on("click",function() {
   if (!started) {
     $("#level-title").text("Level " + level);
     nextSequence();
@@ -39,7 +39,7 @@ function checkAnswer(currentLevel) {
     } else {
       playSound("wrong");
       $("body").addClass("game-over");
-      $("#level-title").text("Game Over, Press Any Key to Restart");
+      $("#level-title").text("Game Over, Press here to Restart");
 
       setTimeout(function () {
         $("body").removeClass("game-over");
