@@ -6,15 +6,23 @@ body {
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
-  margin:  5%;
+  margin:5%;
   color: #FEF2BF;
 }
+.container{
+  display:inline-block;
+  position:relative;
+  margin:auto;
+}
 
-.container {
-  display: flex;
-  width: 50%;
+.row1{
+  display:flex;
   margin: auto;
-
+  
+}
+.row2{
+  margin:auto;
+  display:flex;
 }
 
 .btn {
